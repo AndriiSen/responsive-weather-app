@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SK Internship Weather App</title>
+    <link rel="stylesheet" href="styles/reset-css.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="width-container">
+      <header class="header-section">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Start typing to search..."
+          />
+          <button type="submit" class="search-button">
+            <img src="images/Vector.png" alt="Src icon" />
+          </button>
+          <div class="dropdown-content">
+            <p class="error-m">
+              City not found, please try to change your search query
+            </p>
+            <ul class="dropdown-list"></ul>
+          </div>
+        </div>
+        <ul class="recent"></ul>
+        <div id="weather-widget" class="weather-details-container">
+          <div class="weather-details-top">
+            <div class="weather-details-top-left">
+              <div class="weather-icon">
+                <img
+                  class="w-icon"
+                  src="images/image 1.png"
+                  alt="weather-img"
+                />
+              </div>
+
+              <div class="courrent-weather">
+                <h4 class="temperature">23</h4>
+                <h5 class="weather">Drizzle</h5>
+                <p class="weather-description">Light-instensity</p>
+              </div>
+            </div>
+
+            <div class="city-and-date">
+              <p class="city">Odessa, Ukraine</p>
+              <p class="date">10 march 2020</p>
+            </div>
+          </div>
+          <hr class="weather-details-horizontal-separator" />
+          <div class="weather-details-bottom">
+            <div class="min">
+              <p class="min-temp">Min</p>
+              <p class="min-temperature">-33</p>
+            </div>
+            <hr class="weather-details-vertical-separator" />
+            <div class="max">
+              <p class="max-temp">Max</p>
+              <p class="max-temperature">+33</p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-section">
+        <h2 class="test">
+          Check the weather in most popular cities in the world
+        </h2>
+        <div class="popular-cities-container">
+          <a href="#weather-widget">
+            <div class="popular-city-card new-york">
+              <button type="button" class="new-york-btn">New York</button>
+            </div>
+          </a>
+
+          <a href="#weather-widget">
+            <div class="popular-city-card london">
+              <button type="button" class="london-btn">London</button>
+            </div>
+          </a>
+
+          <a href="#weather-widget">
+            <div class="popular-city-card dubai">
+              <button type="button" class="dubai-btn">Dubai</button>
+            </div>
+          </a>
+
+          <a href="#weather-widget">
+            <div class="popular-city-card paris">
+              <button type="button" class="paris-btn">Paris</button>
+            </div>
+          </a>
+        </div>
+
+        <div class="faq-container">
+          <!-- <h2>Frequently Asked Question</h2> -->
+          <div class="question-cards-container">
+            <div class="question-card">
+              <div class="question first-q">
+                <h4>Question 1</h4>
+                <button type="button">
+                  <img
+                    class="arrow1"
+                    src="images/arrow-down.png"
+                    alt="Show question icon"
+                  />
+                </button>
+              </div>
+              <div id="first-a" class="answer">
+                <p>
+                  But I must explain to you how all this mistaken idea of
+                  denouncing pleasure and praising pain was born and I will give
+                  you a complete account of the system, and expound the actual
+                  teachings of the great explorer of the truth, the
+                  master-builder of human happiness. No one rejects, dislikes,
+                  or avoids pleasure itself, because it is pleasure, but because
+                  those who do not know how to pursue pleasure rationally
+                  encounter consequences that are extremely painful.
+                </p>
+              </div>
+            </div>
+            <div class="question-card">
+              <div class="question second-q">
+                <h4>Question 2</h4>
+                <button type="button">
+                  <img
+                    class="arrow2"
+                    src="images/arrow-down.png"
+                    alt="Show question icon"
+                  />
+                </button>
+              </div>
+              <div id="second-a" class="answer">
+                <p>
+                  But I must explain to you how all this mistaken idea of
+                  denouncing pleasure and praising pain was born and I will give
+                  you a complete account of the system, and expound the actual
+                  teachings of the great explorer of the truth, the
+                  master-builder of human happiness. No one rejects, dislikes,
+                  or avoids pleasure itself, because it is pleasure, but because
+                  those who do not know how to pursue pleasure rationally
+                  encounter consequences that are extremely painful.
+                </p>
+              </div>
+            </div>
+            <div class="question-card">
+              <div class="question third-q">
+                <h4>Question 3</h4>
+                <button type="button">
+                  <img
+                    class="arrow3"
+                    src="images/arrow-down.png"
+                    alt="Show question icon"
+                  />
+                </button>
+              </div>
+              <div id="third-a" class="answer">
+                <p>
+                  But I must explain to you how all this mistaken idea of
+                  denouncing pleasure and praising pain was born and I will give
+                  you a complete account of the system, and expound the actual
+                  teachings of the great explorer of the truth, the
+                  master-builder of human happiness. No one rejects, dislikes,
+                  or avoids pleasure itself, because it is pleasure, but because
+                  those who do not know how to pursue pleasure rationally
+                  encounter consequences that are extremely painful.
+                </p>
+              </div>
+            </div>
+            <div class="question-card">
+              <div class="question fourth-q">
+                <h4>Question 4</h4>
+                <button type="button">
+                  <img
+                    class="arrow4"
+                    src="images/arrow-down.png"
+                    alt="Show question icon"
+                  />
+                </button>
+              </div>
+              <div id="fourth-a" class="answer">
+                <p>
+                  But I must explain to you how all this mistaken idea of
+                  denouncing pleasure and praising pain was born and I will give
+                  you a complete account of the system, and expound the actual
+                  teachings of the great explorer of the truth, the
+                  master-builder of human happiness. No one rejects, dislikes,
+                  or avoids pleasure itself, because it is pleasure, but because
+                  those who do not know how to pursue pleasure rationally
+                  encounter consequences that are extremely painful.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-section">
+        <h3>Andrii Sen - <span class="footer-date"></span></h3>
+      </footer>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

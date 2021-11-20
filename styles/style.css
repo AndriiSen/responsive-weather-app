@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+input {
+  all: unset;
+}
+a {
+  text-decoration: none;
+}
+::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.width-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header-section {
+  background-image: url(/images/hero\ bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 1440px;
+  min-height: 426px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.search-container {
+  width: 600px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.search-container input {
+  margin-left: 20px;
+  width: 90%;
+}
+
+.search-button {
+  border: 0;
+  background: transparent;
+  background: #90caf9;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.search-button:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.search-button img {
+  width: 16px;
+  height: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 70px;
+  background: #ffffff;
+  width: 100%;
+  max-height: 196px;
+  z-index: 1;
+  border-radius: 30px;
+  overflow: scroll;
+}
+
+.dropdown-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-list li {
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dropdown-list li:hover {
+  background: #90caf9;
+  color: #fff;
+}
+.night-mode li:hover {
+  background: #2a344b;
+}
+.recent {
+  display: flex;
+}
+.recent li {
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.show {
+  display: block;
+}
+
+.weather-details-container {
+  width: 600px;
+  min-height: 236px;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+.weather-details-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.weather-details-top-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 30px;
+  margin: 20px 20px 20px 20px;
+}
+
+.courrent-weather .temperature {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 20px;
+}
+
+.courrent-weather .weather {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.courrent-weather .weather-description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  color: #9e9e9e;
+}
+.city-and-date {
+  margin: 20px 20px 0 0;
+}
+
+.city-and-date .city {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.city-and-date .date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9e9e9e;
+  margin-top: 10px;
+}
+
+.weather-details-horizontal-separator {
+  height: 1px;
+  border: none;
+  color: rgb(163, 163, 163);
+  background-color: #bfdce8;
+  width: 560px;
+}
+
+.weather-details-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.weather-details-bottom .min {
+  margin-top: 20px;
+  margin-left: 130px;
+}
+
+.min-temp,
+.max-temp {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9e9e9e;
+}
+.weather-details-bottom .max {
+  margin-top: 20px;
+  margin-right: 130px;
+}
+
+.wetther-details-bottom .temperature {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 5px;
+}
+
+.weather-details-vertical-separator {
+  height: 56px;
+  width: 1px;
+  border: none;
+  color: rgb(163, 163, 163);
+  background-color: #bfdce8;
+}
+
+.main-section h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.popular-cities-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+}
+
+.popular-city-card {
+  width: 220px;
+  height: 220px;
+  border-radius: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  transition: all 0.2s ease-in-out;
+}
+.popular-city-card button {
+  cursor: pointer;
+}
+.popular-city-card:hover {
+  transform: scale(1.07);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+.new-york {
+  background-image: url(/images/newYork.png);
+}
+
+.london {
+  background-image: url(/images/london.png);
+}
+.dubai {
+  background-image: url(/images/dubai.png);
+}
+.paris {
+  background-image: url(/images/paris.png);
+}
+
+.popular-city-card button {
+  border: 0;
+  background: #fff;
+  border-radius: 30px;
+  width: 200px;
+  height: 36px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.main-section .faq-container h2 {
+  margin-top: 100px;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question-cards-container {
+  margin-top: 35px;
+}
+.question-card {
+  width: 1000px;
+  cursor: pointer;
+}
+
+.faq-container .question-card .question {
+  background: #fafafa;
+  width: 100%;
+  height: 54px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.question:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+
+.faq-container .question-card .question h4 {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+
+.faq-container .question-card .question button {
+  border: 0;
+  background: transparent;
+  margin-right: 20px;
+}
+
+.faq-container .question-card .answer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  background: #fafafa;
+  border-radius: 30px;
+  margin-top: 5px;
+  display: none;
+}
+
+.faq-container .question-card .answer p {
+  padding: 20px;
+}
+
+.footer-section {
+  background: #fafafa;
+  height: 100px;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1200px) {
+  .question-cards-container {
+    width: 90%;
+  }
+  .question-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .popular-cities-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .popular-cities-container .popular-city-card {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .popular-cities-container h2 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .weather-details-container,
+  .search-container,
+  .weather-details-horizontal-separator {
+    width: 90%;
+  }
+  .popular-cities-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .weather-details-container .weather-details-top {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .weather-details-container .weather-details-bottom {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .weather-details-vertical-separator {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .error-m {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+}
+
+.error-m {
+  display: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9e9e9e;
+}
